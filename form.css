@@ -1,0 +1,118 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55); /* Gradient background */
+}
+
+.reservation-form {
+    background-color: rgba(255, 255, 255, 0.05); /* Transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    max-width: 450px;
+    width: 100%; /* Use 100% width instead of a fixed size */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    transition: transform 0.3s ease-in-out;
+}
+
+.reservation-form:hover {
+    transform: scale(1.02); /* Slight grow effect on hover */
+}
+
+.reservation-form h1 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 30px;
+    font-size: 2rem; /* Use rem for responsive font sizes */
+    font-weight: 700;
+}
+
+.reservation-form label {
+    font-size: 1rem; /* Responsive font size */
+    color: #FFD700;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 500;
+}
+
+.reservation-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #FFD700;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem; /* Responsive font size */
+    transition: border-color 0.3s ease-in-out;
+}
+
+.reservation-form input:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+.reservation-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem; /* Responsive font size */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.reservation-form button:hover {
+    background-color: #ffcc33;
+}
+
+/* Media query for tablet devices and smaller */
+@media (max-width: 768px) {
+    .reservation-form {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .reservation-form h1 {
+        font-size: 1.8rem; /* Slightly smaller heading for tablets */
+        margin-bottom: 20px;
+    }
+
+    .reservation-form input, 
+    .reservation-form button {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Add padding to avoid content hitting screen edges */
+    }
+
+    .reservation-form {
+        padding: 15px;
+        width: 100%; /* Ensure it takes full width */
+        border-radius: 10px; /* Slightly smaller border-radius */
+    }
+
+    .reservation-form h1 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    .reservation-form input, 
+    .reservation-form button {
+        font-size: 0.8rem; /* Smaller font size */
+        padding: 10px; /* Reduce padding to fit better */
+    }
+}

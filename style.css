@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('1.png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px; /* Reduce padding */
+    
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 25px; /* Smaller font size */
+    color: #FFD700;
+}
+
+.navbar .logo img.logo-img {
+    width: 25px; /* Smaller logo */
+    height: 25px;
+    margin-right: 5px; /* Reduced margin */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Reduced gap */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px; /* Smaller font size */
+    font-weight: 400;
+    transition: all ease-in-out;
+}
+
+.navbar ul li a:hover{
+    color: #FFD700;
+}
+
+.content {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 0 20px; /* Reduced padding */
+    margin-left: 20px; /* Added margin to shift content right */
+}
+
+.content .text {
+    max-width: 40%; /* Reduced max-width */
+}
+
+.content .text h1 {
+    font-size: 36px; /* Smaller heading */
+    font-weight: 700;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.content .text p {
+    font-size: 14px; /* Smaller paragraph text */
+    margin-bottom: 40px; /* Reduced margin */
+}
+
+.content .text .btn {
+    background-color: #FFD700;
+    color: black;
+    padding: 10px 20px; /* Smaller button padding */
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content .text .btn:hover{
+    background-color: #8c834f;
+}
+
+.content .image img {
+    max-width: 90%; /* Slightly smaller image */
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #18202B; /* Dark background */
+    text-align: center;
+    padding: 15px 0; /* Padding for the footer */
+    position: relative; /* Position relative for scrolling */
+    bottom: 0; /* Stick to the bottom of the page */
+    width: 100%; /* Full width */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-around; /* Space between sections */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.footer-column {
+    text-align: center;
+    flex-basis: 25%; /* Membagi kolom menjadi 4 bagian yang sama */
+}
+
+.footer-column h2 {
+    font-family: 'Great Vibes', cursive; /* Sesuaikan font sesuai dengan gambar */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #FFD700;
+}
+
+p {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 5px; /* Reduced gap */
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px; /* Adjusted padding */
+        margin-left: 10px; /* Adjusted margin for mobile */
+    }
+
+    .content .text {
+        max-width: 100%;
+    }
+
+    .content .text h1 {
+        font-size: 28px; /* Smaller heading for mobile */
+    }
+
+    .content .text p {
+        font-size: 12px; /* Smaller paragraph text for mobile */
+    }
+
+    .content .text .btn {
+        padding: 8px 15px; /* Smaller button padding for mobile */
+    }
+
+    .content .image {
+        margin-top: 15px; /* Reduced margin */
+    }
+}

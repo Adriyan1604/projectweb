@@ -1,0 +1,157 @@
+body {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif; /* Mengganti font ke Poppins untuk tampilan lebih elegan */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px; /* Reduce padding */
+    
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 25px; /* Smaller font size */
+    color: #FFD700;
+}
+
+.navbar .logo img.logo-img {
+    width: 25px; /* Smaller logo */
+    height: 25px;
+    margin-right: 5px; /* Reduced margin */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Reduced gap */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px; /* Smaller font size */
+    font-weight: 400;
+    transition: all ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #FFD700; /* Warna hover pada link navbar */
+}
+
+/* Main Container Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    max-width: 1200px; /* Batasan lebar maksimal */
+}
+
+.title {
+    font-size: 65px;
+    font-family: 'Great Vibes', cursive; /* Menggunakan font elegan */
+    text-align: center; /* Mengubah teks menjadi rata tengah */
+    margin-bottom: 40px;
+    color: #FFD700;
+}
+
+/* Menu Item Styles */
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px; /* Jarak antar item menu */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparan background */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.03); /* Efek zoom pada hover */
+}
+
+.menu-item img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px; /* Memperbesar gambar */
+    margin-right: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sedikit bayangan untuk gambar */
+}
+
+.menu-item .description {
+    max-width: 600px;
+}
+
+.menu-item .description h2 {
+    font-size: 36px;
+    font-family: 'Great Vibes', cursive; /* Font elegan untuk nama menu */
+    margin: 0;
+    color: #FFD700;
+}
+
+.menu-item .description p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 15px 0;
+    color: #dcdcdc;
+}
+
+.menu-item .description button {
+    background-color: #ffcc00;
+    color: #000000;
+    border: none;
+    padding: 12px 25px; /* Lebih besar tombol */
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu-item .description button:hover {
+    background-color: #FFD700;
+    color: #1a1a2e;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item img {
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 36px; /* Ukuran font lebih kecil di layar sempit */
+    }
+
+    .menu-item .description h2 {
+        font-size: 28px;
+    }
+
+    .menu-item .description p {
+        font-size: 16px;
+    }
+}
